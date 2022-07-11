@@ -1,0 +1,93 @@
+body {
+     font: 14px "Century Gothic", Futura, sans-serif;
+     margin: 20px;
+
+     ol,
+     ul {
+          padding-left: 30px;
+     }
+
+     .board-row{
+          .square {
+               width: 50px;
+               height: 50px;
+               background: #eee;
+               border: 1px solid #999;
+               float: left;
+               margin: 10px;
+               font-size: 24px;
+               font-weight: bold;
+               text-align: center;
+               line-height: 50px;
+
+               
+          } 
+
+          .square:hover {
+               transition: 0.2s ease;
+               background: #ccc;
+               border: 2px solid #999;
+          }
+     }
+
+     .board-row:after {
+          clear: both;
+          content: "";
+          display: table;
+     }
+
+     .status {
+          margin-bottom: 10px;
+     }
+
+     // .square {
+     //      background: #fff;
+     //      border: 1px solid #999;
+     //      float: left;
+     //      font-size: 24px;
+     //      font-weight: bold;
+     //      line-height: 34px;
+     //      height: 34px;
+     //      margin-right: -1px;
+     //      margin-top: -1px;
+     //      padding: 0;
+     //      text-align: center;
+     //      width: 34px;
+
+         
+     // }
+
+     // .square:focus {
+     //      outline: none;
+     // }
+
+     // .kbd-navigation .square:focus {
+     //      background: #ddd;
+     // }
+
+     .game {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          .undo-button {
+               justify-self: center;
+               margin: 10px;
+
+               #undo {
+                    border: none;
+                    border-radius: 15px;
+                    padding: 10px 15px;
+               }
+
+               #undo:hover {
+                    background: #ddd;
+                    color: blueviolet;
+               }
+          }
+     }
+
+     .game-info {
+          margin-left: 20px;
+     }
+}

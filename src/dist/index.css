@@ -1,0 +1,54 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+body ol,
+body ul {
+  padding-left: 30px;
+}
+body .board-row .square {
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  border: 1px solid #999;
+  float: left;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+body .board-row .square:hover {
+  transition: 0.2s ease;
+  background: #ccc;
+  border: 2px solid #999;
+}
+body .board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+body .status {
+  margin-bottom: 10px;
+}
+body .game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .game .undo-button {
+  justify-self: center;
+  margin: 10px;
+}
+body .game .undo-button #undo {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+body .game .undo-button #undo:hover {
+  background: #ddd;
+  color: blueviolet;
+}
+body .game-info {
+  margin-left: 20px;
+}
